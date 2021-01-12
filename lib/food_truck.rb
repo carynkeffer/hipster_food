@@ -10,13 +10,13 @@ class FoodTruck
   def check_stock(item)
     if @inventory.include?(item)
       inventory[item]
-    else !@inventory.include?(item)
+    else
       0
     end
   end
 
-  def stock(item, amount)
-    inventory[item] += amount
+  def stock(item, quantity)
+    inventory[item] += quantity
   end
 
   def potential_revenue
